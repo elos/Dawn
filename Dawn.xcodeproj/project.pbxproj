@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220CE1011B52FFE9005E98F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CE1001B52FFE9005E98F8 /* AppDelegate.swift */; };
+		220CE1031B52FFE9005E98F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CE1021B52FFE9005E98F8 /* ViewController.swift */; };
+		220CE1061B52FFE9005E98F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220CE1041B52FFE9005E98F8 /* Main.storyboard */; };
+		220CE1081B52FFE9005E98F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220CE1071B52FFE9005E98F8 /* Assets.xcassets */; };
+		220CE10B1B52FFE9005E98F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220CE1091B52FFE9005E98F8 /* LaunchScreen.storyboard */; };
+		220CE1161B52FFE9005E98F8 /* DawnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CE1151B52FFE9005E98F8 /* DawnTests.swift */; };
+		220CE1211B52FFE9005E98F8 /* DawnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CE1201B52FFE9005E98F8 /* DawnUITests.swift */; };
+		220CE1341B53027A005E98F8 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220CE1331B53027A005E98F8 /* ReactiveCocoa.framework */; };
+		220CE1361B5302C7005E98F8 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220CE1351B5302C7005E98F8 /* Result.framework */; };
+		220CE1381B5308D5005E98F8 /* DBProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CE1371B5308D5005E98F8 /* DBProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		220CE1121B52FFE9005E98F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220CE0F51B52FFE9005E98F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220CE0FC1B52FFE9005E98F8;
+			remoteInfo = Dawn;
+		};
+		220CE11D1B52FFE9005E98F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220CE0F51B52FFE9005E98F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220CE0FC1B52FFE9005E98F8;
+			remoteInfo = Dawn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		220CE0FD1B52FFE9005E98F8 /* Dawn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dawn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		220CE1001B52FFE9005E98F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		220CE1021B52FFE9005E98F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		220CE1051B52FFE9005E98F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		220CE1071B52FFE9005E98F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		220CE10A1B52FFE9005E98F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		220CE10C1B52FFE9005E98F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220CE1111B52FFE9005E98F8 /* DawnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DawnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		220CE1151B52FFE9005E98F8 /* DawnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnTests.swift; sourceTree = "<group>"; };
+		220CE1171B52FFE9005E98F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220CE11C1B52FFE9005E98F8 /* DawnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DawnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		220CE1201B52FFE9005E98F8 /* DawnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawnUITests.swift; sourceTree = "<group>"; };
+		220CE1221B52FFE9005E98F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220CE1331B53027A005E98F8 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		220CE1351B5302C7005E98F8 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		220CE1371B5308D5005E98F8 /* DBProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBProtocol.swift; path = Protocols/DBProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		220CE0FA1B52FFE9005E98F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220CE1341B53027A005E98F8 /* ReactiveCocoa.framework in Frameworks */,
+				220CE1361B5302C7005E98F8 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CE10E1B52FFE9005E98F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CE1191B52FFE9005E98F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220CE0F41B52FFE9005E98F8 = {
+			isa = PBXGroup;
+			children = (
+				220CE1351B5302C7005E98F8 /* Result.framework */,
+				220CE1331B53027A005E98F8 /* ReactiveCocoa.framework */,
+				220CE0FF1B52FFE9005E98F8 /* Dawn */,
+				220CE1141B52FFE9005E98F8 /* DawnTests */,
+				220CE11F1B52FFE9005E98F8 /* DawnUITests */,
+				220CE0FE1B52FFE9005E98F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		220CE0FE1B52FFE9005E98F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				220CE0FD1B52FFE9005E98F8 /* Dawn.app */,
+				220CE1111B52FFE9005E98F8 /* DawnTests.xctest */,
+				220CE11C1B52FFE9005E98F8 /* DawnUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		220CE0FF1B52FFE9005E98F8 /* Dawn */ = {
+			isa = PBXGroup;
+			children = (
+				220CE1001B52FFE9005E98F8 /* AppDelegate.swift */,
+				220CE1371B5308D5005E98F8 /* DBProtocol.swift */,
+				220CE1021B52FFE9005E98F8 /* ViewController.swift */,
+				220CE1041B52FFE9005E98F8 /* Main.storyboard */,
+				220CE1071B52FFE9005E98F8 /* Assets.xcassets */,
+				220CE1091B52FFE9005E98F8 /* LaunchScreen.storyboard */,
+				220CE10C1B52FFE9005E98F8 /* Info.plist */,
+			);
+			path = Dawn;
+			sourceTree = "<group>";
+		};
+		220CE1141B52FFE9005E98F8 /* DawnTests */ = {
+			isa = PBXGroup;
+			children = (
+				220CE1151B52FFE9005E98F8 /* DawnTests.swift */,
+				220CE1171B52FFE9005E98F8 /* Info.plist */,
+			);
+			path = DawnTests;
+			sourceTree = "<group>";
+		};
+		220CE11F1B52FFE9005E98F8 /* DawnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				220CE1201B52FFE9005E98F8 /* DawnUITests.swift */,
+				220CE1221B52FFE9005E98F8 /* Info.plist */,
+			);
+			path = DawnUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		220CE0FC1B52FFE9005E98F8 /* Dawn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220CE1251B52FFE9005E98F8 /* Build configuration list for PBXNativeTarget "Dawn" */;
+			buildPhases = (
+				220CE0F91B52FFE9005E98F8 /* Sources */,
+				220CE0FA1B52FFE9005E98F8 /* Frameworks */,
+				220CE0FB1B52FFE9005E98F8 /* Resources */,
+				220CE1321B53013B005E98F8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dawn;
+			productName = Dawn;
+			productReference = 220CE0FD1B52FFE9005E98F8 /* Dawn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		220CE1101B52FFE9005E98F8 /* DawnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220CE1281B52FFE9005E98F8 /* Build configuration list for PBXNativeTarget "DawnTests" */;
+			buildPhases = (
+				220CE10D1B52FFE9005E98F8 /* Sources */,
+				220CE10E1B52FFE9005E98F8 /* Frameworks */,
+				220CE10F1B52FFE9005E98F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220CE1131B52FFE9005E98F8 /* PBXTargetDependency */,
+			);
+			name = DawnTests;
+			productName = DawnTests;
+			productReference = 220CE1111B52FFE9005E98F8 /* DawnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		220CE11B1B52FFE9005E98F8 /* DawnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220CE12B1B52FFE9005E98F8 /* Build configuration list for PBXNativeTarget "DawnUITests" */;
+			buildPhases = (
+				220CE1181B52FFE9005E98F8 /* Sources */,
+				220CE1191B52FFE9005E98F8 /* Frameworks */,
+				220CE11A1B52FFE9005E98F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220CE11E1B52FFE9005E98F8 /* PBXTargetDependency */,
+			);
+			name = DawnUITests;
+			productName = DawnUITests;
+			productReference = 220CE11C1B52FFE9005E98F8 /* DawnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		220CE0F51B52FFE9005E98F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = elos;
+				TargetAttributes = {
+					220CE0FC1B52FFE9005E98F8 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					220CE1101B52FFE9005E98F8 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 220CE0FC1B52FFE9005E98F8;
+					};
+					220CE11B1B52FFE9005E98F8 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 220CE0FC1B52FFE9005E98F8;
+					};
+				};
+			};
+			buildConfigurationList = 220CE0F81B52FFE9005E98F8 /* Build configuration list for PBXProject "Dawn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 220CE0F41B52FFE9005E98F8;
+			productRefGroup = 220CE0FE1B52FFE9005E98F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				220CE0FC1B52FFE9005E98F8 /* Dawn */,
+				220CE1101B52FFE9005E98F8 /* DawnTests */,
+				220CE11B1B52FFE9005E98F8 /* DawnUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		220CE0FB1B52FFE9005E98F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220CE10B1B52FFE9005E98F8 /* LaunchScreen.storyboard in Resources */,
+				220CE1081B52FFE9005E98F8 /* Assets.xcassets in Resources */,
+				220CE1061B52FFE9005E98F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CE10F1B52FFE9005E98F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CE11A1B52FFE9005E98F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		220CE1321B53013B005E98F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		220CE0F91B52FFE9005E98F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220CE1031B52FFE9005E98F8 /* ViewController.swift in Sources */,
+				220CE1011B52FFE9005E98F8 /* AppDelegate.swift in Sources */,
+				220CE1381B5308D5005E98F8 /* DBProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CE10D1B52FFE9005E98F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220CE1161B52FFE9005E98F8 /* DawnTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220CE1181B52FFE9005E98F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220CE1211B52FFE9005E98F8 /* DawnUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		220CE1131B52FFE9005E98F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220CE0FC1B52FFE9005E98F8 /* Dawn */;
+			targetProxy = 220CE1121B52FFE9005E98F8 /* PBXContainerItemProxy */;
+		};
+		220CE11E1B52FFE9005E98F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220CE0FC1B52FFE9005E98F8 /* Dawn */;
+			targetProxy = 220CE11D1B52FFE9005E98F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		220CE1041B52FFE9005E98F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220CE1051B52FFE9005E98F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		220CE1091B52FFE9005E98F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220CE10A1B52FFE9005E98F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		220CE1231B52FFE9005E98F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		220CE1241B52FFE9005E98F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		220CE1261B52FFE9005E98F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS/";
+				INFOPLIST_FILE = Dawn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.elos.Dawn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		220CE1271B52FFE9005E98F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS/";
+				INFOPLIST_FILE = Dawn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.elos.Dawn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		220CE1291B52FFE9005E98F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DawnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.elos.DawnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dawn.app/Dawn";
+			};
+			name = Debug;
+		};
+		220CE12A1B52FFE9005E98F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DawnTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.elos.DawnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dawn.app/Dawn";
+			};
+			name = Release;
+		};
+		220CE12C1B52FFE9005E98F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DawnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.elos.DawnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Dawn;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		220CE12D1B52FFE9005E98F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DawnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.elos.DawnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Dawn;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		220CE0F81B52FFE9005E98F8 /* Build configuration list for PBXProject "Dawn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220CE1231B52FFE9005E98F8 /* Debug */,
+				220CE1241B52FFE9005E98F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220CE1251B52FFE9005E98F8 /* Build configuration list for PBXNativeTarget "Dawn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220CE1261B52FFE9005E98F8 /* Debug */,
+				220CE1271B52FFE9005E98F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		220CE1281B52FFE9005E98F8 /* Build configuration list for PBXNativeTarget "DawnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220CE1291B52FFE9005E98F8 /* Debug */,
+				220CE12A1B52FFE9005E98F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		220CE12B1B52FFE9005E98F8 /* Build configuration list for PBXNativeTarget "DawnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220CE12C1B52FFE9005E98F8 /* Debug */,
+				220CE12D1B52FFE9005E98F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 220CE0F51B52FFE9005E98F8 /* Project object */;
+}
