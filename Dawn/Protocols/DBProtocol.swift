@@ -10,6 +10,7 @@ import Foundation
 import ReactiveCocoa
 
 protocol DB {
-    func find<T>(kind: T.Type, id: String) -> Signal<T, NoError>;
-    func update<T>(record: T) -> Signal<T, NoError>;
+    func find<T: Persistent>(kind: T.Type, id: String) -> Signal<T, NoError>;
+    func update<T: Persistent>(record: T) -> Signal<T, NoError>;
+    func create<T: Persistent>(record: T) -> Signal<T, NoError>;
 }
