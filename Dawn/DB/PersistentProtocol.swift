@@ -10,5 +10,6 @@ import Foundation
 import ReactiveCocoa
 
 protocol Persistent {
-    static func find(id: String) -> Signal<Self, NoError>;
+    var id: String { get }
+    static func find(id: String) -> Signal<Self, NSError>
 }
