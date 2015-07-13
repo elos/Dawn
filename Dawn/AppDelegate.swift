@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        Message.find("Hello, Swift")
+        Message.find("asdf")
         // Override point for customization after application launch.
         return true
     }

@@ -9,6 +9,10 @@
 import Foundation
 import ReactiveCocoa
 
+let db = [
+    Message(id: "asdf", text: "Hello, Swift")
+]
+
 class FixtureDB: DB {
     let recordsSignal: Signal<Persistent, NSError>
     let recordsObserver: Signal<Persistent, NSError>.Observer
@@ -23,7 +27,13 @@ class FixtureDB: DB {
     
     func find<T : Persistent>(kind: T.Type, id: String) -> Signal<T, NSError> {
         async {
-            sendNext(self.recordsObserver, Message(text: "Hello, Swift"))
+            for record in db {
+                if (record.id == id) {
+                    sendNext(self.recordsObserver, record)
+                    return
+                }
+            }
+            sendError(self.recordsObserver, NSError(domain: "no record with id \(id)", code: 123, userInfo: nil))
         }
         return recordsSignal
             |> filter { record in record is T && record.id == id }

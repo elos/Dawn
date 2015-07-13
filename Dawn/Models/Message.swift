@@ -11,13 +11,15 @@ import ReactiveCocoa
 
 final class Message: Persistent {
     let id: String;
+    let message: String
     
-    init (text: String) {
-        id = text
+    init (id: String, text: String) {
+        self.id = id
+        self.message = text
     }
     static func find(id: String) -> Signal<Message, NSError> {
         DBService.getDefaultDB().find(Message.self, id: id).observe(
-            next: { msg in print(msg.id) },
+            next: { msg in print(msg.message) },
             error: { e in print(e) },
             interrupted: { print("int") },
             completed: { print("comp") }
